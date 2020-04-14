@@ -1,0 +1,54 @@
+
+* {
+	margin-left: 30px;
+	margin-right: 30px;
+	line-height: 1.4;
+}
+
+img {
+	width: 25%;
+	height: 25%;
+}
+
+.sections {
+	padding: 20px;
+}
+
+#skills {
+ width: 100%;
+ display: flex;
+ justify-content: space-around;
+}
+
+#skill1 {
+width: 50%;
+}
+
+#skill2 {
+width: 50%;
+}
+
+.table {
+	width: 100%;
+}
+
+.column1 {
+	width: 70%;
+	/*border: 1px solid red;*/
+}
+
+.column2 {
+	width: 30%;
+	/*border: 1px solid blue;*/
+}
+
+
+
+
+
+
+
+
+
+
+
