@@ -1,0 +1,8 @@
+var word="swim"
+if ((word.length > 3) && (word.endsWith('ing'))) {
+    console.log(word + 'ly')
+} else if (word.length > 3) {
+    console.log (word + 'ing')
+} else {
+    console.log (word)
+}
