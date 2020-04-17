@@ -1,0 +1,129 @@
+// Exercise 1 
+
+    // 1.
+
+function checkdriverage () {
+    var age = Number(prompt ('What is your age?'));
+    if (age < 18) {
+        return alert('Sorry, you are too yound to drive this car. Powering off');
+        } else if (age > 18) {
+        return alert('Powering On. Enjoy the ride!');
+        } else if (age === 18) {
+        return alert('Congratulations on your first year of driving. Enjoy the ride!');
+        }
+}
+
+checkdriverage();
+
+    // 2.
+
+function checkdriverage (age) {
+    if (age < 18) {
+        return console.log('Sorry, you are too yound to drive this car. Powering off');
+        } else if (age > 18) {
+        return console.log('Powering On. Enjoy the ride!');
+        } else if (age === 18) {
+        return console.log('Congratulations on your first year of driving. Enjoy the ride!');
+        }
+}
+
+checkdriverage(92);
+
+// Exercise 2
+
+amazonBasket = {
+    glasses: 1,
+    books: 2,
+    floss: 100,
+    apple: 0
+}
+
+function checkBasket() {
+    let wish = prompt('What do you want?');
+    if (wish in amazonBasket) {
+        if (amazonBasket[wish] > 0) {
+            alert('We have it!')
+        } else {
+            alert('Sorry, we do not have this item');
+        }
+    } else {
+        alert('Sorry, we do not have this item');
+    }
+}
+
+checkBasket()
+
+
+// Exercise 3
+
+shoppingList = ['banana', 'pear', 'apple', 'orange', 'sharon'];
+
+var stock = { 
+    "banana": 6, 
+    "apple": 0,
+    "pear": 12,
+    "orange": 32,
+    "blueberry":1
+}  
+
+var prices = {    
+    "banana": 4, 
+    "apple": 2, 
+    "pear": 1,
+    "orange": 1.5,
+    "blueberry": 10
+} 
+
+function myBill() {
+    
+    let total = 0
+    for (let x of shoppingList) {
+        if (x in stock) {
+            if (stock[x] > 0) {
+                total = total + prices[x];
+                stock[x] = stock[x] - 1;
+            } 
+        } 
+     }
+    
+    return total;
+
+}
+
+myBill();
+
+
+// Exercise 4 
+
+    // 1.
+
+    function hotel_cost(nights) {
+    return nights * 150;
+    }
+
+    hotel_cost(5)
+
+
+     // 2.
+
+     let locationPrice = {
+        "London": 183,
+        "Paris": 220,
+    };
+    
+    function plane_ride_cost(city) {
+        if (city in locationPrice) {
+            return locationPrice[city];
+        } else {
+            return 300;
+        };
+    };
+    
+    let res = plane_ride_cost("Paris");
+    console.log(res);
+
+     // 3.
+
+     function rental_car_cost(days) {
+        return 40 * days;
+    }
