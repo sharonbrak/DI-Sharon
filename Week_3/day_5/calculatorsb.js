@@ -55,5 +55,3 @@ function my_f(choice) {
 
 }
 
-            
-
