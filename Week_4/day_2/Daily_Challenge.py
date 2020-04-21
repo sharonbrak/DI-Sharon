@@ -3,7 +3,7 @@
 birthdate = input('What is your birth date? (Enter it like this DD/MM/YYYY) ')
 day = birthdate[0:2] 
 month = birthdate[3:5]
-year = birthdate[6:10]
+year = birthdate[6:10] # or year = birthdate.split("/")[-1] 
 curryear = 2020
 age = int(curryear) - int(year)
 
