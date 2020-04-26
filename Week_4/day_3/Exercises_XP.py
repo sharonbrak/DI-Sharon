@@ -32,10 +32,10 @@ store = {
 
 store['number_stores'] = 2
 
+
 customers = store["type_of_clothes"]
-sentencecustomers = (f'The clients of Zara are {customers[0]}, ' \
-    f'{customers[1]}, {customers[2]} and {customers[3]}')
-print(sentencecustomers)
+print(f"Client of zara are: {', '.join([el for el in customers])}")
+
 
 store['country_creation']='Spain'
 

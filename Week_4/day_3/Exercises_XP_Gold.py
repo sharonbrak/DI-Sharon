@@ -33,6 +33,10 @@ for x in mypassword:
         print('no')
 print(ifdigit)
 
+#Another way to check if digit 
+# any([char.isdigit() for char in password])
+
+
 
 if mypassword.upper() != mypassword and mypassword.lower() != mypassword and len(ifdigit)>0 and '@' in mypassword or '#' in mypassword or '$' in mypassword and len(mypassword)>=6 and len(mypassword) <=12:
     print('Great!')
